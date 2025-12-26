@@ -1,0 +1,70 @@
+
+> sunny-shop@0.1.0 build
+> next build
+
+  Ôû▓ Next.js 14.2.35
+  - Environments: .env
+
+   Creating an optimized production build ...
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|C:\Siti web\sunny-shop\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[2]!C:\Siti web\sunny-shop\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[3]!C:\Siti web\sunny-shop\app\globals.css': No serializer registered for PostCSSSyntaxError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> PostCSSSyntaxError
+Failed to compile.
+
+./app/globals.css:76:3
+Syntax error: C:\Siti web\sunny-shop\app\globals.css The `font-sm` class does not exist. If `font-sm` is a custom class, make sure it is defined within a `@layer` directive.
+
+  74 | /* Form Styles */
+  75 | .form-input {
+> 76 |   @apply w-full px-4 py-3 border-2 border-gray-300 rounded-lg font-sm transition-colors duration-200 focus:outline-none focus:border-primary-blue focus:bg-blue-50;
+     |   ^
+  77 | }
+  78 | 
+
+./app/globals.css
+Syntax error: C:\Siti web\sunny-shop\app\globals.css The `font-sm` class does not exist. If `font-sm` is a custom class, make sure it is defined within a `@layer` directive. (76:3)
+
+  74 | /* Form Styles */
+  75 | .form-input {
+> 76 |   @apply w-full px-4 py-3 border-2 border-gray-300 rounded-lg font-sm transition-colors duration-200 focus:outline-none focus:border-primary-blue focus:bg-blue-50;
+     |   ^
+  77 | }
+  78 | 
+
+    at tryRunOrWebpackError (C:\Siti web\sunny-shop\node_modules\next\dist\compiled\webpack\bundle5.js:28:312989)
+    at __webpack_require_module__ (C:\Siti web\sunny-shop\node_modules\next\dist\compiled\webpack\bundle5.js:28:131165)
+    at __nested_webpack_require_153728__ (C:\Siti web\sunny-shop\node_modules\next\dist\compiled\webpack\bundle5.js:28:130607)
+    at C:\Siti web\sunny-shop\node_modules\next\dist\compiled\webpack\bundle5.js:28:131454
+    at symbolIterator (C:\Siti web\sunny-shop\node_modules\next\dist\compiled\neo-async\async.js:1:14444)
+    at done (C:\Siti web\sunny-shop\node_modules\next\dist\compiled\neo-async\async.js:1:14824)
+    at Hook.eval [as callAsync] (eval at create (C:\Siti web\sunny-shop\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:15:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (C:\Siti web\sunny-shop\node_modules\next\dist\compiled\webpack\bundle5.js:13:26012)
+    at C:\Siti web\sunny-shop\node_modules\next\dist\compiled\webpack\bundle5.js:28:130328
+    at symbolIterator (C:\Siti web\sunny-shop\node_modules\next\dist\compiled\neo-async\async.js:1:14402)
+-- inner error --
+Syntax error: C:\Siti web\sunny-shop\app\globals.css The `font-sm` class does not exist. If `font-sm` is a custom class, make sure it is defined within a `@layer` directive. (76:3)
+
+  74 | /* Form Styles */
+  75 | .form-input {
+> 76 |   @apply w-full px-4 py-3 border-2 border-gray-300 rounded-lg font-sm transition-colors duration-200 focus:outline-none focus:border-primary-blue focus:bg-blue-50;
+     |   ^
+  77 | }
+  78 | 
+
+    at Object.<anonymous> (C:\Siti web\sunny-shop\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[2]!C:\Siti web\sunny-shop\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[3]!C:\Siti web\sunny-shop\app\globals.css:1:7)
+    at C:\Siti web\sunny-shop\node_modules\next\dist\compiled\webpack\bundle5.js:28:922493
+    at Hook.eval [as call] (eval at create (C:\Siti web\sunny-shop\node_modules\next\dist\compiled\webpack\bundle5.js:13:28636), <anonymous>:7:1)
+    at Hook.CALL_DELEGATE [as _call] (C:\Siti web\sunny-shop\node_modules\next\dist\compiled\webpack\bundle5.js:13:25906)
+    at C:\Siti web\sunny-shop\node_modules\next\dist\compiled\webpack\bundle5.js:28:131198
+    at tryRunOrWebpackError (C:\Siti web\sunny-shop\node_modules\next\dist\compiled\webpack\bundle5.js:28:312943)
+    at __webpack_require_module__ (C:\Siti web\sunny-shop\node_modules\next\dist\compiled\webpack\bundle5.js:28:131165)
+    at __nested_webpack_require_153728__ (C:\Siti web\sunny-shop\node_modules\next\dist\compiled\webpack\bundle5.js:28:130607)
+    at C:\Siti web\sunny-shop\node_modules\next\dist\compiled\webpack\bundle5.js:28:131454
+    at symbolIterator (C:\Siti web\sunny-shop\node_modules\next\dist\compiled\neo-async\async.js:1:14444)
+
+Generated code for C:\Siti web\sunny-shop\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[2]!C:\Siti web\sunny-shop\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[3]!C:\Siti web\sunny-shop\app\globals.css
+
+Import trace for requested module:
+./app/globals.css
+
+
+> Build failed because of webpack errors
