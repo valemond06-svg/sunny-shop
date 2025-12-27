@@ -27,7 +27,7 @@
 
 1. **Clona il repository**
 ```bash
-git clone https://github.com/tuo-username/sunny-shop.git
+git clone https://github.com/valemond06-svg/sunny-shop.git
 cd sunny-shop
 ```
 
